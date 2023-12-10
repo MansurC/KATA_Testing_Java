@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-01-05T10:46:40.530Z",
+        "start_timestamp": "2023-12-10T21:04:49.024Z",
         "line": 4,
         "name": "Option to book a room is available on the page",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9880000000,
+              "duration": 6927000000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 91000000,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 104000000,
+              "duration": 136000000,
               "status": "passed"
             },
             "line": 7,
@@ -46,6 +46,151 @@
               "location": "features.step_definitions.BookingSteps.i_have_the_option_to_book_a_room()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@book"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-12-10T21:04:56.474Z",
+        "line": 11,
+        "name": "Book a room for 2 nights successfully",
+        "description": "",
+        "id": "book-a-room;book-a-room-for-2-nights-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 77000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I am on the home page and button to book a room is visible",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_am_on_the_home_page_and_book_button_is_visible()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 403000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click the book button",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_click_the_book_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the calendar today is displayed",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.the_calendar_today_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1206000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I fill in the information for booking with:",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_fill_in_the_information_for_booking_with(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Field",
+                  "Value"
+                ]
+              },
+              {
+                "cells": [
+                  "First Name",
+                  "Clint"
+                ]
+              },
+              {
+                "cells": [
+                  "Last Name",
+                  "Eastwood"
+                ]
+              },
+              {
+                "cells": [
+                  "Email",
+                  "eastwood@gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Phone",
+                  "+32 444 44 44 44"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3329000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I select a stay period of two nights",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_select_a_stay_period_of_two_nights()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I see chosen days",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_see_chosen_days()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 265000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on the Book button",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.iClickOnTheButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[@xpath]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MEV\u0027, ip: \u0027192.168.0.17\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_392\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231129155202, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 56924, moz:profile: C:\\Users\\mansu\\AppData\\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 440444d2-1036-4915-87c9-0fa0ac84bb55\n*** Element info: {Using\u003dxpath, value\u003d//p[@xpath]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy16.getText(Unknown Source)\r\n\tat pages.HomePage.calculateDateFrom(HomePage.java:199)\r\n\tat features.step_definitions.BookingSteps.i_should_validate_booking_dates(BookingSteps.java:80)\r\n\tat ✽.I should validate booking dates(file:///C:/Users/mansu/OneDrive/Bureaublad/KATA2%20-%20Copy%20Base%20Progress%20-%20Copy/KATA_Testing_Java/src/test/java/features/booking.feature:24)\r\n",
+              "duration": 10056000000,
+              "status": "failed"
+            },
+            "line": 24,
+            "name": "I should validate booking dates",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_should_validate_booking_dates()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
